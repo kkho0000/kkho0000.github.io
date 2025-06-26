@@ -105,7 +105,7 @@ onUnmounted(() => {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
-  background: url('/img/profile.JPG') center center/cover no-repeat;
+  background: url('/img/profile.JPG') 75% center/cover no-repeat;
   transition: filter 0.3s;
   will-change: filter;
 }

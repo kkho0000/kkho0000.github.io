@@ -21,15 +21,14 @@ const currentTab = ref('intro')
 .tabs {
   display: flex;
   gap: 24px;
-  margin-bottom: 24px;
-  justify-content: center;      /* 水平居中 */
-  position: fixed;              /* 固定在页面顶部 */
+  justify-content: center;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: #fff;
   z-index: 100;
-  padding: 16px 0 0 0;         /* 顶部留白，可根据需要调整 */
+  padding: 16px 0 0 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.03);
 }
 .tabs button {
@@ -50,7 +49,6 @@ const currentTab = ref('intro')
   font-weight: bold;
 }
 .tab-content {
-  padding: 24px;
   min-height: 200px;
 }
 :global(body) {
