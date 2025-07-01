@@ -17,9 +17,9 @@ onMounted(async() => {
         v-for="project in projects" 
         :key="project.title"
       >
-        <a
+        <router-link
           class="project-link"
-          :href="`/project/${encodeURIComponent(project.title)}`"
+          :to="`/project/${project.slug}`"
           style="display: flex; align-items: center; text-decoration: none; color: inherit;"
         >
           <div class="project-info" style="flex: 1; text-align: left;">
@@ -31,7 +31,7 @@ onMounted(async() => {
             :src="project.image"
             :alt="project.title"
           />
-        </a>
+        </router-link>
       </div>
     </div>
   </section>

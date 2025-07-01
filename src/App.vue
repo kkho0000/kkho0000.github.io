@@ -8,13 +8,10 @@ const currentTab = ref('intro')
 
 <template>
   <div class="tabs">
-    <button :class="{active: currentTab === 'intro'}" @click="currentTab = 'intro'">个人介绍</button>
-    <button :class="{active: currentTab === 'project'}" @click="currentTab = 'project'">项目经历</button>
+    <router-link to="/" :class="{active: $route.path === '/'}">个人介绍</router-link>
+    <router-link to="/projects" :class="{active: $route.path === '/projects'}">项目经历</router-link>
   </div>
-  <div class="tab-content">
-    <Introduction v-if="currentTab === 'intro'" />
-    <ProjectExperience v-if="currentTab === 'project'" />
-  </div>
+  <router-view />
 </template>
 
 <style scoped>
@@ -31,7 +28,8 @@ const currentTab = ref('intro')
   padding: 16px 0 0 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.03);
 }
-.tabs button {
+
+.tabs :deep(a) {
   padding: 8px 24px;
   border: none;
   color: #222;
@@ -41,16 +39,21 @@ const currentTab = ref('intro')
   font-size: 16px;
   border-bottom: 2px solid transparent;
   outline: none;
+  text-decoration: none;
+  transition: color 0.2s, border-bottom 0.2s, background 0.2s;
 }
-.tabs button.active {
+
+.tabs :deep(.active) {
   background: #fff;
   border-bottom: 2px solid #427db9;
   color: #427db9;
   font-weight: bold;
 }
+
 .tab-content {
   min-height: 200px;
 }
+
 :global(body) {
   color: #222;
 }
