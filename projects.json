@@ -1,17 +1,14 @@
 [
   { 
     "title": "VR/LBE乌镇文旅", 
-    "image": "/img/project/lbe.jpg", 
+    "slug": "vr-wuzhen-lbe",
+    "image": "/img/project/vr-wuzhen-lbe/lbe.jpg", 
     "description": "24届香港理工大学元宇宙科技专业毕业设计。该项目旨在通过虚拟现实与位置基础娱乐（LBE）技术，打造一个沉浸式的乌镇文旅体验。" 
   },
-  { 
-    "title": "VR/LBE乌镇文旅", 
-    "image": "/img/project/lbe.jpg", 
-    "description": "24届香港理工大学元宇宙科技专业毕业设计。该项目旨在通过虚拟现实与位置基础娱乐（LBE）技术，打造一个沉浸式的乌镇文旅体验。" 
-  },
-  { 
-    "title": "VR/LBE乌镇文旅", 
-    "image": "/img/project/lbe.jpg", 
-    "description": "24届香港理工大学元宇宙科技专业毕业设计。该项目旨在通过虚拟现实与位置基础娱乐（LBE）技术，打造一个沉浸式的乌镇文旅体验。" 
+  {
+    "title": "2D游戏Demo-The Dream of Starry Nights",
+    "slug": "vangogh-messenger",
+    "image": "/img/project/vangogh-messenger/cover.JPEG",
+    "description": "《The Dream of Starry Nights》是一款以文森特·梵高为灵感的2.5D横版解谜游戏。玩家将穿越梵高的经典画作，化身为一位幽灵信使，踏上一段将他写给弟弟提奥的信送达邮筒的旅程。整部游戏以信件为线索，结合画面解谜与情绪叙事，引导玩家逐步走近这位伟大画家的内心世界。"
   }
 ]
