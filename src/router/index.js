@@ -1,18 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ProjectExperience from '../components/ProjectExperience.vue'
-// 你还需要创建 ProjectDetail.vue
-import ProjectDetail from '../components/ProjectDetail.vue'
-import Introduction from '../components/Introduction.vue'
+import HomeView from '../views/HomeView.vue'
+import { rememberProjectListPosition, scrollBehavior } from './scroll'
 
 const routes = [
-  { path: '/', component: Introduction },
-  { path: '/projects', component: ProjectExperience },
-  { path: '/project/:slug', component: ProjectDetail, props: true }
+  {
+    path: '/',
+    name: 'home',
+    component: HomeView,
+  },
+  {
+    path: '/projects',
+    name: 'projects',
+    component: () => import('../views/ProjectsView.vue'),
+  },
+  {
+    path: '/project/:slug',
+    name: 'project-detail',
+    component: () => import('../views/ProjectDetailView.vue'),
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/',
+  },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior,
 })
+
+router.beforeEach(rememberProjectListPosition)
 
 export default router

@@ -1,0 +1,58 @@
+{
+  "/img/profile.JPG": {
+    "width": 5184,
+    "height": 3888,
+    "src": "/img/generated/profile-800.jpg",
+    "webp": "/img/generated/profile-400.webp 400w, /img/generated/profile-800.webp 800w, /img/generated/profile-1200.webp 1200w, /img/generated/profile-1600.webp 1600w",
+    "jpeg": "/img/generated/profile-400.jpg 400w, /img/generated/profile-800.jpg 800w, /img/generated/profile-1200.jpg 1200w, /img/generated/profile-1600.jpg 1600w"
+  },
+  "/img/project/vangogh-messenger/cover.JPEG": {
+    "width": 1280,
+    "height": 720,
+    "src": "/img/generated/project-vangogh-messenger-cover-800.jpg",
+    "webp": "/img/generated/project-vangogh-messenger-cover-400.webp 400w, /img/generated/project-vangogh-messenger-cover-800.webp 800w, /img/generated/project-vangogh-messenger-cover-1200.webp 1200w, /img/generated/project-vangogh-messenger-cover-1280.webp 1280w",
+    "jpeg": "/img/generated/project-vangogh-messenger-cover-400.jpg 400w, /img/generated/project-vangogh-messenger-cover-800.jpg 800w, /img/generated/project-vangogh-messenger-cover-1200.jpg 1200w, /img/generated/project-vangogh-messenger-cover-1280.jpg 1280w"
+  },
+  "/img/project/vangogh-messenger/mail.png": {
+    "width": 1280,
+    "height": 723,
+    "src": "/img/generated/project-vangogh-messenger-mail-800.jpg",
+    "webp": "/img/generated/project-vangogh-messenger-mail-400.webp 400w, /img/generated/project-vangogh-messenger-mail-800.webp 800w, /img/generated/project-vangogh-messenger-mail-1200.webp 1200w, /img/generated/project-vangogh-messenger-mail-1280.webp 1280w",
+    "jpeg": "/img/generated/project-vangogh-messenger-mail-400.jpg 400w, /img/generated/project-vangogh-messenger-mail-800.jpg 800w, /img/generated/project-vangogh-messenger-mail-1200.jpg 1200w, /img/generated/project-vangogh-messenger-mail-1280.jpg 1280w"
+  },
+  "/img/project/vangogh-messenger/parallax.png": {
+    "width": 1280,
+    "height": 315,
+    "src": "/img/generated/project-vangogh-messenger-parallax-800.jpg",
+    "webp": "/img/generated/project-vangogh-messenger-parallax-400.webp 400w, /img/generated/project-vangogh-messenger-parallax-800.webp 800w, /img/generated/project-vangogh-messenger-parallax-1200.webp 1200w, /img/generated/project-vangogh-messenger-parallax-1280.webp 1280w",
+    "jpeg": "/img/generated/project-vangogh-messenger-parallax-400.jpg 400w, /img/generated/project-vangogh-messenger-parallax-800.jpg 800w, /img/generated/project-vangogh-messenger-parallax-1200.jpg 1200w, /img/generated/project-vangogh-messenger-parallax-1280.jpg 1280w"
+  },
+  "/img/project/vangogh-messenger/sunflower.png": {
+    "width": 515,
+    "height": 384,
+    "src": "/img/generated/project-vangogh-messenger-sunflower-515.jpg",
+    "webp": "/img/generated/project-vangogh-messenger-sunflower-400.webp 400w, /img/generated/project-vangogh-messenger-sunflower-515.webp 515w",
+    "jpeg": "/img/generated/project-vangogh-messenger-sunflower-400.jpg 400w, /img/generated/project-vangogh-messenger-sunflower-515.jpg 515w"
+  },
+  "/img/project/vr-spaceship-racing/cover.jpg": {
+    "width": 1280,
+    "height": 720,
+    "src": "/img/generated/project-vr-spaceship-racing-cover-800.jpg",
+    "webp": "/img/generated/project-vr-spaceship-racing-cover-400.webp 400w, /img/generated/project-vr-spaceship-racing-cover-800.webp 800w, /img/generated/project-vr-spaceship-racing-cover-1200.webp 1200w, /img/generated/project-vr-spaceship-racing-cover-1280.webp 1280w",
+    "jpeg": "/img/generated/project-vr-spaceship-racing-cover-400.jpg 400w, /img/generated/project-vr-spaceship-racing-cover-800.jpg 800w, /img/generated/project-vr-spaceship-racing-cover-1200.jpg 1200w, /img/generated/project-vr-spaceship-racing-cover-1280.jpg 1280w"
+  },
+  "/img/project/vr-wuzhen-lbe/hand-interaction.jpg": {
+    "width": 3840,
+    "height": 2160,
+    "src": "/img/generated/project-vr-wuzhen-lbe-hand-interaction-800.jpg",
+    "webp": "/img/generated/project-vr-wuzhen-lbe-hand-interaction-400.webp 400w, /img/generated/project-vr-wuzhen-lbe-hand-interaction-800.webp 800w, /img/generated/project-vr-wuzhen-lbe-hand-interaction-1200.webp 1200w, /img/generated/project-vr-wuzhen-lbe-hand-interaction-1600.webp 1600w",
+    "jpeg": "/img/generated/project-vr-wuzhen-lbe-hand-interaction-400.jpg 400w, /img/generated/project-vr-wuzhen-lbe-hand-interaction-800.jpg 800w, /img/generated/project-vr-wuzhen-lbe-hand-interaction-1200.jpg 1200w, /img/generated/project-vr-wuzhen-lbe-hand-interaction-1600.jpg 1600w"
+  },
+  "/img/project/vr-wuzhen-lbe/lbe.jpg": {
+    "width": 2945,
+    "height": 2208,
+    "src": "/img/generated/project-vr-wuzhen-lbe-lbe-800.jpg",
+    "webp": "/img/generated/project-vr-wuzhen-lbe-lbe-400.webp 400w, /img/generated/project-vr-wuzhen-lbe-lbe-800.webp 800w, /img/generated/project-vr-wuzhen-lbe-lbe-1200.webp 1200w, /img/generated/project-vr-wuzhen-lbe-lbe-1600.webp 1600w",
+    "jpeg": "/img/generated/project-vr-wuzhen-lbe-lbe-400.jpg 400w, /img/generated/project-vr-wuzhen-lbe-lbe-800.jpg 800w, /img/generated/project-vr-wuzhen-lbe-lbe-1200.jpg 1200w, /img/generated/project-vr-wuzhen-lbe-lbe-1600.jpg 1600w"
+  }
+}

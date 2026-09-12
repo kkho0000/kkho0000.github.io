@@ -1,60 +1,39 @@
 <script setup>
-import { ref } from 'vue'
-import Introduction from './components/Introduction.vue'
-import ProjectExperience from './components/ProjectExperience.vue'
+import { watchEffect } from 'vue'
+import { useRoute } from 'vue-router'
+import SiteHeader from './components/layout/SiteHeader.vue'
+import { useLocale } from './composables/useLocale'
+import { contact } from './content/site'
 
-const currentTab = ref('intro')
+const route = useRoute()
+const { locale, copy } = useLocale()
+watchEffect(() => {
+  const title = route.name === 'home'
+    ? `${copy.value.name} · ${copy.value.alternateName}`
+    : `${route.name === 'projects' ? copy.value.projects : copy.value.projectNote} · ${copy.value.name}`
+  document.documentElement.lang = locale.value
+  document.title = title
+  for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+    document.querySelector(selector)?.setAttribute('content', copy.value.metaDescription)
+  }
+  for (const selector of ['meta[property="og:title"]', 'meta[name="twitter:title"]']) {
+    document.querySelector(selector)?.setAttribute('content', title)
+  }
+  document.querySelector('meta[property="og:locale"]')?.setAttribute('content', locale.value === 'en' ? 'en_US' : 'zh_CN')
+})
 </script>
 
 <template>
-  <div class="tabs">
-    <router-link to="/" :class="{active: $route.path === '/'}">个人介绍</router-link>
-    <router-link to="/projects" :class="{active: $route.path === '/projects'}">项目经历</router-link>
-  </div>
-  <router-view />
+  <a class="skip-link" href="#main-content">{{ copy.skip }}</a>
+  <SiteHeader />
+  <main id="main-content" tabindex="-1">
+    <router-view />
+  </main>
+  <footer class="site-footer page-width">
+    <span>© {{ new Date().getFullYear() }} Junde Li</span>
+    <div class="footer-links">
+      <a :href="`mailto:${contact.email}`">{{ copy.contact }}</a>
+      <a :href="contact.github" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
 </template>
-
-<style scoped>
-.tabs {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 100;
-  padding: 16px 0 0 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.03);
-}
-
-.tabs :deep(a) {
-  padding: 8px 24px;
-  border: none;
-  color: #222;
-  background: #fff;
-  cursor: pointer;
-  border-radius: 6px 6px 0 0;
-  font-size: 16px;
-  border-bottom: 2px solid transparent;
-  outline: none;
-  text-decoration: none;
-  transition: color 0.2s, border-bottom 0.2s, background 0.2s;
-}
-
-.tabs :deep(.active) {
-  background: #fff;
-  border-bottom: 2px solid #427db9;
-  color: #427db9;
-  font-weight: bold;
-}
-
-.tab-content {
-  min-height: 200px;
-}
-
-:global(body) {
-  color: #222;
-}
-</style>
