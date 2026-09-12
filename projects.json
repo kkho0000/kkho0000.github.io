@@ -1,14 +1,74 @@
 [
-  { 
-    "title": "VR/LBE乌镇文旅", 
+  {
     "slug": "vr-wuzhen-lbe",
-    "image": "/img/project/vr-wuzhen-lbe/lbe.jpg", 
-    "description": "24届香港理工大学元宇宙科技专业毕业设计。该项目旨在通过虚拟现实与位置基础娱乐（LBE）技术，打造一个沉浸式的乌镇文旅体验。" 
+    "category": "technology",
+    "image": "/img/project/vr-wuzhen-lbe/hand-interaction.jpg",
+    "imageFocus": { "scale": 1.6, "y": "1%" },
+    "title": {
+      "zh-CN": "乌镇 · VR 文旅体验",
+      "en": "Wuzhen · A VR cultural experience"
+    },
+    "description": {
+      "zh-CN": "以乌镇与大运河文化为主题的多人 LBE VR 项目，结合 3DGS 场景重建、数字导览与染坊交互。",
+      "en": "A multiplayer LBE VR project exploring Wuzhen and Grand Canal culture through 3DGS reconstruction, digital guides and a dyeing workshop."
+    },
+    "contribution": {
+      "zh-CN": "大空间部署、多人同步与性能优化",
+      "en": "Venue deployment, multiplayer synchronization and performance optimization"
+    },
+    "video": {
+      "provider": "youtube",
+      "id": "XJ_RZcHLjP4",
+      "poster": "/img/project/vr-wuzhen-lbe/lbe.jpg"
+    },
+    "content": {
+      "zh-CN": "/md/vr-wuzhen-lbe.md",
+      "en": "/md/en/vr-wuzhen-lbe.md"
+    }
   },
   {
-    "title": "2D游戏Demo-The Dream of Starry Nights",
     "slug": "vangogh-messenger",
+    "category": "games",
     "image": "/img/project/vangogh-messenger/cover.JPEG",
-    "description": "《The Dream of Starry Nights》是一款以文森特·梵高为灵感的2.5D横版解谜游戏。玩家将穿越梵高的经典画作，化身为一位幽灵信使，踏上一段将他写给弟弟提奥的信送达邮筒的旅程。整部游戏以信件为线索，结合画面解谜与情绪叙事，引导玩家逐步走近这位伟大画家的内心世界。"
+    "title": {
+      "zh-CN": "星夜之梦",
+      "en": "The Dream of Starry Nights"
+    },
+    "description": {
+      "zh-CN": "以梵高画作为背景的横版解谜游戏。玩家扮演信使，用颜料绘制攀爬路径，将写给提奥的信送往邮箱。",
+      "en": "A side-scrolling puzzle game set within Van Gogh’s paintings. A messenger paints climbable paths to deliver a letter to Theo."
+    },
+    "contribution": {
+      "zh-CN": "角色风格化 Shader 与全屏视觉效果",
+      "en": "Character shaders and full-screen visual effects"
+    },
+    "content": {
+      "zh-CN": "/md/vangogh-messenger.md",
+      "en": "/md/en/vangogh-messenger.md"
+    }
+  },
+  {
+    "slug": "vr-spaceship-racing",
+    "category": "games",
+    "image": "/img/project/vr-spaceship-racing/cover.jpg",
+    "title": {
+      "zh-CN": "VR 飞船竞速",
+      "en": "VR spaceship racing"
+    },
+    "description": {
+      "zh-CN": "一款虚拟现实竞速游戏，玩家驾驶飞船穿行于不同赛道，体验 VR 环境下的驾驶与操控。",
+      "en": "A virtual reality racing game in which players pilot a spaceship through different tracks, exploring driving and controls in VR."
+    },
+    "video": {
+      "src": "/video/vr-spaceship-racing.mp4",
+      "poster": "/img/project/vr-spaceship-racing/cover.jpg",
+      "duration": "00:59",
+      "width": 1280,
+      "height": 720
+    },
+    "content": {
+      "zh-CN": "/md/vr-spaceship-racing.md",
+      "en": "/md/en/vr-spaceship-racing.md"
+    }
   }
 ]
